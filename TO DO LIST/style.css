@@ -1,0 +1,130 @@
+body{
+    display:flex;
+    justify-content: center;
+    background-color:black;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    color: beige;
+    background-color: rgb(112, 187, 137);
+    box-sizing: border-box;
+    height:700px;
+    width:600px;
+    margin-top: 60px;
+    padding:30px;
+}
+.heading{
+    box-sizing: border-box;
+    width:550px;
+    height:650px;
+    background-color: rgb(74, 175, 175);
+    padding-top:30px;
+    padding-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.id{
+    display: flex;
+     padding:50px;
+     padding-left: 200px;
+
+}
+.labelform{
+    font-size:1.5rem;
+    font-style: italic;
+    color: beige;
+    padding-left: 50px;
+    
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.inputform{
+    box-sizing: border-box;
+    border: 1px solid rgb(29, 119, 192);
+    width:320px;
+    height:30px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(235, 43, 43);
+    margin-top: 15px;
+    box-sizing: border-box;
+    width: 100px;
+    height:30px;
+    align-items: center;
+    margin-left: 10px;
+    border: rgb(22, 22, 22);
+    color:white;
+    padding-left:25px ;
+    
+}
+.btn:hover{
+    background-color: rgb(68, 10, 18);
+    box-shadow: 0 0 15px rgb(34, 8, 14);
+    cursor:pointer;
+}
+.list{
+    display:flex;
+    flex-direction: column;
+    margin-left: 80px;
+
+
+}
+.list li{
+    background-color: rgb(73, 180, 207);
+    position: relative;
+    list-style-type: none;
+    padding:10px;
+    font-family: cursive;
+    box-sizing: border-box;
+    border: 1px solid rgb(11, 41, 11);
+    border-radius: 10px;
+    width:300px;
+}
+.list li .fa-trash{
+    color:rgb(201, 45, 45);
+    position: absolute;
+    right:10px;
+    transform:translate(-50%);
+    cursor:pointer;
+}
+.list li .fa-square-check{
+    color:#14068f;
+    position: absolute;
+    right:28px;
+    transform: translate(-50%);
+    cursor:pointer;
+}
+.list li.checked{
+    color: rgb(75, 73, 73);
+    text-decoration: line-through;
+
+}
+.list li.checked .fa-square-check{
+    color:rgb(88, 86, 86);
+
+}
+
+
+.btn2{
+    background-color: rgb(121, 117, 117);
+    margin-top: 15px;
+    box-sizing: border-box;
+    width: 200px;
+    height:30px;
+    align-items: center;
+    margin-left: 120px;
+    border: rgb(22, 22, 22);
+    color:white;
+    margin-top: 20px;
+}
+.btn2:hover{
+    background-color: brown;
+    box-shadow: 0 0 15px green;
+}

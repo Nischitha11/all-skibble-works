@@ -1,0 +1,65 @@
+body{
+
+    background: rgba(216, 222, 241, 0.6);
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: rgb(181, 247, 142);
+    width: 800px;
+    height:800px;
+    display:flex;
+    margin: 80px;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;   
+}
+.box div{
+    box-sizing: border-box;
+    border: 1px solid wheat;
+    border-radius: 20%;
+    margin: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;  
+    width:200px;
+    height: 200px;
+    color: aquamarine;
+}
+.img1{
+    background-image: url(./images/images\ \(1\).jpg);
+    
+}
+.img2{
+    background-image: url(./images/images\ \(2\).jpg);
+    
+}
+.img3{
+    background-image: url(./images/images\ \(3\).jpg);
+    
+}
+.img4{
+    background-image: url(./images/images\ \(4\).jpg);
+    
+}
+.img5{
+    background-image: url(./images/images.jpg);
+    
+}
+.img6{
+    background-image: url(./images/download\ \(2\).jpg);
+    
+}
+.img7{
+    background-image: url(./images/images\ \(5\).jpg);
+    
+}
+.img8{
+    background-image: url(./images/download.jpg);
+    
+}
+.img9{
+    background-image: url(./images/download\ \(1\).jpg);
+    
+}

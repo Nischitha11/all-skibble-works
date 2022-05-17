@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border-radius: 2px solid black;
+    font-family: poppins sans-serif;
+    background-color: blueviolet;
+}
+body{
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+    padding:10px;
+    background-color:linear gradient(violet blueviolet);
+
+}
+.container.title{
+    max-width:600px;
+    color:black;
+    font-size: 3px solid black;
+}
+.container{
+    width:300%;
+    height:400%;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 2px solid black;
+    margin:6% auto;
+    padding:5px;
+    background-color: aliceblue;
+}
