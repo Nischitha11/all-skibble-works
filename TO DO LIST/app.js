@@ -1,83 +1,55 @@
-document.getElementById("add").addEventListener("click", displayitem);
+const todoContainer = document.querySelector(".todolist");
 
-function displayitem() {
-  document.getElementById("demo").innerHTML = AddItem();
-}
-
-
-var myNodelist = document.getElementsByTagName("li");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("");
-  span.className = "fa-solid fa-trash";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
-
-
-var close = document.getElementsByClassName("fa-solid fa-trash");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
- /*var myNodelists = document.getElementsByTagName("li");
-var i;
-for (i = 0; i < myNodelists.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("");
-  span.className = "fa-solid fa-square-check";
-  span.appendChild(txt);
-  myNodelists[i].appendChild(span);
-}
-var check = document.getElementsByClassName("fa-solid fa-square-check");
-var i;
-for (i = 0; i < close.length; i++) {
-  check[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}*/
-
-
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'li') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById(".inputform").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You have nothing to do!");
-  } else {
-    document.getElementById(".list").appendChild(li);
-  }
-  document.getElementById(".inputform").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("");
-  span.className = "fa-solid fa-trash";
-  span.appendChild(txt);
-  li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
+class Todo{
+    todo = "";
+    constructor(text, container){
+        this.text = text;
+        this.container = container
+        this.addToView();
     }
-  }
+
+    addToView() {
+      this.todo = document.createElement('li');        
+      this.todo.innerHTML = this.text;  
+      this.container.appendChild(this.todo);
+
+      let checkbtn = document.createElement('button')
+      checkbtn.innerHTML = "done"
+      checkbtn.onclick = () => {
+        this.checked()
+      }
+      this.todo.appendChild(checkbtn)
+
+      let delbtn = document.createElement('button')
+      delbtn.innerHTML = "X"
+      delbtn.onclick = () =>{
+        this.deleteTodo()
+      }
+      this.todo.appendChild(delbtn)
+    }
+    checked() {
+      this.todo.style.color = "blue";
+      this.todo.style.textdecoration = "linethrough";
+
+    }
+    deleteTodo(){
+      this.container.removeChild(this.todo)
+    }
+
 }
+let todoArray = []
 
-document.getElementById("remove").addEventListener("click", diplaynone);
-
-function displaynone() {
-  document.getElementById("remove").innerHTML = removeall();
+ function saveTodo(){
+    let inputContainer = document.querySelector("#newtodo")//.value;
+    let inputValue = inputContainer.value
+    todoArray.push(new Todo(inputValue, todoContainer));
+    clearInput()
+    
+}
+function undoDelete(){
+  todoArray[0].createTodo()
+}
+function clearInput(){
+  let inputContainer = document.getElementById("todo")
+  inputContainer.value = ""
 }

@@ -3,7 +3,7 @@ body{
     justify-content: center;
     background-color:black;
 }
-.container{
+.todo-container{
     display:flex;
     flex-direction: column;
     color: beige;
@@ -14,7 +14,7 @@ body{
     margin-top: 60px;
     padding:30px;
 }
-.heading{
+.todo-heading{
     box-sizing: border-box;
     width:550px;
     height:650px;
@@ -36,7 +36,7 @@ body{
     padding-left: 50px;
     
 }
-.form{
+.todo-form{
     display: flex;
     flex-wrap: wrap;
     
@@ -69,14 +69,14 @@ body{
     box-shadow: 0 0 15px rgb(34, 8, 14);
     cursor:pointer;
 }
-.list{
+.todolist{
     display:flex;
     flex-direction: column;
     margin-left: 80px;
 
 
 }
-.list li{
+/*.todolist li{
     background-color: rgb(73, 180, 207);
     position: relative;
     list-style-type: none;
@@ -86,27 +86,25 @@ body{
     border: 1px solid rgb(11, 41, 11);
     border-radius: 10px;
     width:300px;
-}
-.list li .fa-trash{
+}*/
+.todolist li .fa-trash{
     color:rgb(201, 45, 45);
-    position: absolute;
     right:10px;
     transform:translate(-50%);
     cursor:pointer;
 }
-.list li .fa-square-check{
+.todolist li .fa-square-check{
     color:#14068f;
-    position: absolute;
     right:28px;
     transform: translate(-50%);
     cursor:pointer;
 }
-.list li.checked{
+.todolist li.checked{
     color: rgb(75, 73, 73);
     text-decoration: line-through;
 
 }
-.list li.checked .fa-square-check{
+.todolist li.checked .fa-square-check{
     color:rgb(88, 86, 86);
 
 }

@@ -10,54 +10,26 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="heading">
+    <div class="todo-Container">
+        <div class="todo-heading">
             <h1>Todo List</h1>
             <p>Today I need to :</p>
             <hr>   
             <div class="id"></div>
             <label for="input" class="labelform">Add items to todo list</label>
            <br>
-        <div class="form">
-            <input type="text" class="inputform">
-            <button class="btn" type="button" id="add">AddItem</button>   
-            <p id="demo"></p>
-            <ul class="list">
-                <li class="checked">complete todolist in html
-                    <i class="fa-solid fa-square-check"></i>
-                   <!----<i class="fa-solid fa-trash"></i>--->
-                </li>
-                 <li> complete todolist cssqare
-                     <i class="fa-solid fa-square-check"></i>
-                     <!--<i class="fa-solid fa-trash"></i>--->
-                </li>
+        <div class="todo-form">
+            <input type="text" class="inputform" id="newtodo">
+            <button onclick="saveTodo()" class="btn" type="button" id="newTodo">Add Item</button>   
+            <ul class="todolist">
+                <li></li>  <!---- <i  class="fa-solid fa-square-check"></i>
+                    <i  class="fa-solid fa-trash"></i>--->
             </ul>
-
         </div>
-<!----<div class="id"></div>
-        <div class="id"></div>
-            <label for="input" class="labelform">Add items to todo list</label>
-           <br>
-           <div class="form">
-                <input type="text" class="inputform">
-                <ul class="list">
-                    <li class="checked">complete todolist in html
-                        <i class="fa-solid fa-square-check"></i>
-                        <i class="fa-solid fa-trash"></i>
-                    </li>
-                     <li> complete todolist cssqare
-                         <i class="fa-solid fa-square-check"></i>
-                         <i class="fa-solid fa-trash"></i>
-                    </li>
-                </ul>
-                <button class="btn" type="button" id="add">Add Item</button>-->
-               
-        
-                <button class="btn2" type="button" id="remove">Remove All</button>
-
-        
+                
         </div>
     </div>
     <script src="./app.js"></script>
+
 </body>
 </html>
