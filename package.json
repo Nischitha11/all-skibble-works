@@ -1,0 +1,19 @@
+{
+  "name": "all-skibble-works",
+  "version": "1.0.0",
+  "description": "simple web server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nischitha11/all-skibble-works.git"
+  },
+  "author": "Nischitha Reddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nischitha11/all-skibble-works/issues"
+  },
+  "homepage": "https://github.com/Nischitha11/all-skibble-works#readme"
+}

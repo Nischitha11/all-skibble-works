@@ -52,3 +52,8 @@ function clearInput() {
     inputContainer.value = ""
 }
 
+function myFunction() {
+    let checked = document.createElement("input");
+    checked.setAttribute("type","checkbox");
+    this.todo.appendChild(checked);
+}

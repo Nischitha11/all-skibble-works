@@ -1,0 +1,39 @@
+body{
+    width: 100%;
+    margin: 20px;
+    background-color: rgb(2, 2, 107);
+
+}
+header{
+    display: flex;
+    justify-content: center;
+    
+}
+h1{
+    display: flex;
+    text-align: center;
+    text-decoration: underline;
+    align-items: center;
+    font:200;
+    padding: 15px;
+    color: aliceblue;
+}
+.search{
+    align-items: flex-end;
+    background-color: blue;
+    color: darkgrey;
+    
+    
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#main img{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:300px;
+    height:400px;
+    padding:30px;
+}

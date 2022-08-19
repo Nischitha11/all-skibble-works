@@ -1,0 +1,18 @@
+
+<div class="card" style="width: 18rem;">
+
+    <div class="card-body">
+        <h5 class="card-title">{{planetpersonInfo.name | titlecase}}</h5>
+
+
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Climate: {{planetpersonInfo.climate | titlecase}}</li>
+            <li class="list-group-item">Population: {{planetpersonInfo.population}}</li>
+            <li class="list-group-item">Terrain: {{planetpersonInfo.terrain | titlecase}}</li>
+            <li class="list-group-item"> Year: {{planetpersonInfo.orbital_period}} days</li>
+            <li class="list-group-item"> Day: {{planetpersonInfo.rotation_period}}</li>
+            <li class="list-group-item">Diameter: {{planetpersonInfo.diameter}}</li>
+        </ul>
+
+    </div>
+</div>
